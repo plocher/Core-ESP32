@@ -1,0 +1,18 @@
+Core Field Unit Processor board using an ESP32 Dev Board with Wifi, BLE and a small OLED screen
+
+A platform to prove out the ESP32 environment (maybe with circuit python) as a field unit implementation platform,
+allowing the software stack to be generalized and possibly based off of interpreted text file based data structures rather than customized C++ code.
+
+
+Based on WeMOS/Lolin ESP32+OLED, with 2x 8x8 LED Matrix displays for showing control packet info.
+
+  * Broken - the ESP32 is sensitive to pullup on D12 at boot time.  I missed the app-note.  This board doesn't ever get out of reset.
+  * Broken - the yield on the ESP32+OLED devices was crap - the OLEDs died quickly.  (3 out of 3 failed...)
+
+
+On the intertubes, you can find this device as esp32+oled Lolin D-duino32
+
+
+OLED is a SSD1306 I2C display. pin 5 is SDA, pin 4 is SCL
+
+
