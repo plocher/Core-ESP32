@@ -4,13 +4,6 @@ A platform to prove out the ESP32 environment (maybe with circuit python) as a f
 allowing the software stack to be generalized and possibly based off of interpreted text file based data structures rather than customized C++ code.
 
 
-ESP32 - Geekcreit WROOM dev board & SSD1306 I2C OLED - Matrix LED displays removed.
-
-
-The 1.0 version integrated OLEDs were poor quality in practice; 2.0 brings
-  * a different ESP32 - Geekcreit ESP32/Dev WROOM,
-  * an external OLED - SSD1306 128x32 oe 128x64, which unfortunately covers the WiFi antennas and degrades performance.
-  * external LED Matrix codeline displays with processor signals brought out to an RJ12 IO4 jack.
-
+Same as v2.1, but using 0603 component footprints.
 
 
