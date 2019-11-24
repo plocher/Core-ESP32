@@ -4,11 +4,8 @@ A platform to prove out the ESP32 environment (maybe with circuit python) as a f
 allowing the software stack to be generalized and possibly based off of interpreted text file based data structures rather than customized C++ code.
 
 
-Changes:
+Geekcreit ESP32 WROOM
 
-
-  * Moved OLED connector to not cover WROOM radio module
-  * Added mounting holes
-  * Moved top silkscreen items to not overlap
-  * fixed bottom silkscreen location
+  * Converted J6 - the Codeline RJ12 - to full IO4 (with 0.100 alternate...) since the [I2C-Codeline-Matrix](/pages/I2C-Codeline-Matrix) is now operational
+  * Beefed up VIN traces to support higher prolonged current draws
 

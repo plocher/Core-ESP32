@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="100" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9986,6 +9986,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="MT2" library="SPCoast" deviceset="MOUNTINGHOLE" device=""/>
 <part name="MT3" library="SPCoast" deviceset="MOUNTINGHOLE" device=""/>
 <part name="MT4" library="SPCoast" deviceset="MOUNTINGHOLE" device=""/>
+<part name="IO-D" library="SparkFun-Connectors" deviceset="M06" device="LOCK"/>
 </parts>
 <sheets>
 <sheet>
@@ -9993,10 +9994,11 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="149.86" y="25.4" size="3.81" layer="97">IO &amp; I2C Adapter for
 Geekcreit ESP32</text>
 <text x="152.908" y="6.35" size="3.81" layer="97">John Plocher</text>
-<text x="235.458" y="6.604" size="3.81" layer="97">2.3</text>
+<text x="235.458" y="6.604" size="3.81" layer="97">2.4</text>
 <text x="149.86" y="38.1" size="1.6764" layer="102">Processor carrier board for Geekcreit ESP32
 Breaks out 5v I2C, IO4 style headers and Matrix Display
-2.1-&gt;2.2: change from 0805 to 0603 footprints</text>
+2.1-&gt;2.2: change from 0805 to 0603 footprints
+2.4: codeline is now I2C, add more I/Os</text>
 <text x="190.5" y="86.36" size="5.08" layer="97">I2C</text>
 <text x="86.36" y="165.1" size="5.08" layer="97">Geekcreit/DOIT
 ESP32</text>
@@ -10076,6 +10078,7 @@ Matrix</text>
 <instance part="MT2" gate="MT1" x="238.76" y="68.58"/>
 <instance part="MT3" gate="MT1" x="238.76" y="83.82"/>
 <instance part="MT4" gate="MT1" x="238.76" y="99.06"/>
+<instance part="IO-D" gate="G$1" x="30.48" y="147.32" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -10156,6 +10159,8 @@ Matrix</text>
 <pinref part="J6" gate="J" pin="6"/>
 <wire x1="40.64" y1="139.7" x2="25.4" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="V3" gate="GND" pin="GND"/>
+<pinref part="IO-D" gate="G$1" pin="6"/>
+<junction x="25.4" y="139.7"/>
 </segment>
 </net>
 <net name="+9V" class="3">
@@ -10260,6 +10265,8 @@ Matrix</text>
 <pinref part="J6" gate="J" pin="1"/>
 <wire x1="40.64" y1="152.4" x2="25.4" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="VCC1" gate="G$1" pin="VCCIO"/>
+<pinref part="IO-D" gate="G$1" pin="1"/>
+<junction x="25.4" y="152.4"/>
 </segment>
 <segment>
 <pinref part="I2C" gate="I2C" pin="V+"/>
@@ -10317,6 +10324,8 @@ Matrix</text>
 <wire x1="40.64" y1="147.32" x2="25.4" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="147.32" x2="22.86" y2="147.32" width="0.1524" layer="91"/>
 <label x="22.86" y="147.32" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="IO-D" gate="G$1" pin="3"/>
+<junction x="25.4" y="147.32"/>
 </segment>
 </net>
 <net name="D27H" class="2">
@@ -10325,6 +10334,8 @@ Matrix</text>
 <wire x1="40.64" y1="144.78" x2="25.4" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="144.78" x2="22.86" y2="144.78" width="0.1524" layer="91"/>
 <label x="22.86" y="144.78" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="IO-D" gate="G$1" pin="4"/>
+<junction x="25.4" y="144.78"/>
 </segment>
 </net>
 <net name="D13H" class="2">
@@ -10333,6 +10344,8 @@ Matrix</text>
 <wire x1="40.64" y1="142.24" x2="25.4" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="142.24" x2="22.86" y2="142.24" width="0.1524" layer="91"/>
 <label x="22.86" y="142.24" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="IO-D" gate="G$1" pin="5"/>
+<junction x="25.4" y="142.24"/>
 </segment>
 </net>
 <net name="D14" class="2">
@@ -10581,6 +10594,8 @@ Matrix</text>
 <wire x1="40.64" y1="149.86" x2="25.4" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="149.86" x2="22.86" y2="149.86" width="0.1524" layer="91"/>
 <label x="22.86" y="149.86" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="IO-D" gate="G$1" pin="2"/>
+<junction x="25.4" y="149.86"/>
 </segment>
 </net>
 </nets>
