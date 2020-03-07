@@ -1,8 +1,11 @@
 title: Core-ESP32
 project: Core-ESP32
 designer: John Plocher
+author: John Plocher
 fabricated: yes
 fab_date: 2019-03
+fab_date: 
 status: released
 release: yes
+tags: [eagle, SPCoast]
 image_path: Core-ESP32-Graphic.png
