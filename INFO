@@ -7,5 +7,5 @@ fab_date: 2019-03
 fab_date: 
 status: released
 release: yes
-tags: [eagle, SPCoast]
+tags: [eagle, SPCoast, Processor]
 image_path: Core-ESP32-Graphic.png
