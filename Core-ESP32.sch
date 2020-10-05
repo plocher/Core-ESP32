@@ -11679,17 +11679,17 @@ By microbuilder.eu&lt;/p&gt;</description>
 <part name="3V21" library="supply1" deviceset="+3V3" device=""/>
 <part name="VCC26" library="supply1" deviceset="VCCIO" device=""/>
 <part name="V4" library="supply2" deviceset="GND" device=""/>
-<part name="J4" library="SPCoast" deviceset="CONNECTOR-RJ25" device="-43860-2-MOLEX"/>
-<part name="IO-B" library="SPCoast" deviceset="CONNECTOR-M06" device="LOCK"/>
+<part name="J4" library="SPCoast" deviceset="CONNECTOR-RJ25" device="-43860-2-MOLEX" value="RJ12/6"/>
+<part name="IO-B" library="SPCoast" deviceset="CONNECTOR-M06" device="LOCK" value="0.100"/>
 <part name="V7" library="supply2" deviceset="GND" device=""/>
 <part name="VCC29" library="supply1" deviceset="VCCIO" device=""/>
-<part name="IO-C" library="SPCoast" deviceset="CONNECTOR-M06" device="LOCK"/>
-<part name="J5" library="SPCoast" deviceset="CONNECTOR-RJ25" device="-43860-2-MOLEX"/>
+<part name="IO-C" library="SPCoast" deviceset="CONNECTOR-M06" device="LOCK" value="0.100"/>
+<part name="J5" library="SPCoast" deviceset="CONNECTOR-RJ25" device="-43860-2-MOLEX" value="RJ12/6"/>
 <part name="VCC30" library="supply1" deviceset="VCCIO" device=""/>
 <part name="V8" library="supply2" deviceset="GND" device=""/>
-<part name="I2CLED32" library="SPCoast" deviceset="CONNECTOR-M04" device="LOCK"/>
-<part name="I2CLED64" library="SPCoast" deviceset="CONNECTOR-M04" device="LOCK"/>
-<part name="J6" library="SPCoast" deviceset="CONNECTOR-RJ25" device="-43860-2-MOLEX"/>
+<part name="I2CLED32" library="SPCoast" deviceset="CONNECTOR-M04" device="LOCK" value="0.100"/>
+<part name="I2CLED64" library="SPCoast" deviceset="CONNECTOR-M04" device="LOCK" value="0.100"/>
+<part name="J6" library="SPCoast" deviceset="CONNECTOR-RJ25" device="-43860-2-MOLEX" value="RJ12/6"/>
 <part name="VCC1" library="supply1" deviceset="VCCIO" device=""/>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
 <part name="Q14" library="SPCoast" deviceset="MOSFET-N-*-?" device="SOT23" technology="BSS138" value="BSS138"/>
@@ -11697,7 +11697,7 @@ By microbuilder.eu&lt;/p&gt;</description>
 <part name="R29" library="SPCoast" deviceset="R*" device="0603-RES" value="10k"/>
 <part name="3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="VCC4" library="supply1" deviceset="VCCIO" device=""/>
-<part name="IO-D" library="SPCoast" deviceset="CONNECTOR-M06" device="LOCK"/>
+<part name="IO-D" library="SPCoast" deviceset="CONNECTOR-M06" device="LOCK" value="0.100"/>
 <part name="Q15" library="SPCoast" deviceset="MOSFET-N-*-?" device="SOT23" technology="BSS138" value="BSS138"/>
 <part name="R1" library="SPCoast" deviceset="R*" device="0603-RES" value="10k"/>
 <part name="R30" library="SPCoast" deviceset="R*" device="0603-RES" value="10k"/>
@@ -11708,7 +11708,7 @@ By microbuilder.eu&lt;/p&gt;</description>
 <part name="R32" library="SPCoast" deviceset="R*" device="0603-RES" value="10k"/>
 <part name="3V11" library="supply1" deviceset="+3V3" device=""/>
 <part name="VCC10" library="supply1" deviceset="VCCIO" device=""/>
-<part name="CON1" library="SPCoast" deviceset="CONNECTOR-M05" device="LOCK"/>
+<part name="CON1" library="SPCoast" deviceset="CONNECTOR-M05" device="LOCK" value="0.100"/>
 <part name="VCC12" library="supply1" deviceset="VCCIO" device=""/>
 <part name="Q17" library="SPCoast" deviceset="MOSFET-N-*-?" device="SOT23" technology="BSS138" value="BSS138"/>
 <part name="R33" library="SPCoast" deviceset="R*" device="0603-RES" value="10k"/>
@@ -11719,12 +11719,12 @@ By microbuilder.eu&lt;/p&gt;</description>
 <part name="FID-UL" library="SPCoast" deviceset="FIDUCIAL" device=""/>
 <part name="LED1" library="SPCoast" deviceset="LED*" device="0603-LED" value="G"/>
 <part name="R35" library="SPCoast" deviceset="R*" device="0603-RES" value="2k2"/>
-<part name="CON2" library="SPCoast" deviceset="CONNECTOR-M04" device="LOCK"/>
-<part name="CON3" library="SPCoast" deviceset="CONNECTOR-GROVE-4P-2.0" device="-3470130P1"/>
+<part name="CON2" library="SPCoast" deviceset="CONNECTOR-M04" device="LOCK" value="0.100"/>
+<part name="CON3" library="SPCoast" deviceset="CONNECTOR-GROVE-4P-2.0" device="-3470130P1" value="2mm"/>
 <part name="SUPPLY3" library="supply2" deviceset="+9V" device=""/>
 <part name="V6" library="supply2" deviceset="GND" device=""/>
 <part name="VCC17" library="supply1" deviceset="VCCIO" device=""/>
-<part name="JP2" library="SPCoast" deviceset="JUMPER-3" device="PTH-LOCK"/>
+<part name="JP2" library="SPCoast" deviceset="JUMPER-3" device="PTH-LOCK" value="0.100"/>
 <part name="3V13" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
