@@ -11600,7 +11600,7 @@ By microbuilder.eu&lt;/p&gt;</description>
 <part name="V12" library="supply2" deviceset="GND" device=""/>
 <part name="I2C" library="SPCoast" deviceset="CONNECTOR-I2C" device="LEFT" value="CONNECTOR-I2CLEFT"/>
 <part name="V1" library="supply2" deviceset="GND" device=""/>
-<part name="J2" library="SPCoast" deviceset="CONNECTOR-DC-POWER" device="-RA"/>
+<part name="J2" library="SPCoast" deviceset="CONNECTOR-DC-POWER" device="-RA" value="2.1mm"/>
 <part name="LABEL1" library="SPCoast" deviceset="DOC-POWER_LABEL" device="" value="7.5-12vDC"/>
 <part name="BOARD" library="SPCoast" deviceset="BOARD" device="80X100-IOB" value="BOARD80X150"/>
 <part name="C3" library="SPCoast" deviceset="CAP*" device="0603" value="10uF"/>
